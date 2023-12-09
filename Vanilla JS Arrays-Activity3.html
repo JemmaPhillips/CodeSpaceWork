@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+	
+<script>	
+// find the maximum and minimum value of an array
+const numbers = [25, 14, 56, 15, 36, 56, 77, 18, 29, 49];
+
+//  find the maximum value in an array
+function findMax(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  let max = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  return max;
+}
+
+// Function to find the minimum value in an array
+function findMin(arr) {
+  if (arr.length === 0) {
+    return "Array is empty";
+  }
+
+  let min = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+
+  return min;
+}
+
+// Find the maximum and minimum values of the sample array
+const maxValue = findMax(numbers);
+const minValue = findMin(numbers);
+
+// Display the results in the console
+console.log("The maximum value in the array is:", maxValue);
+console.log("The minimum value in the array is:", minValue);
+
+
+
+
+	
+</script>
+	
+	
+	
+	
+	
+	
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  </body>
+</html>
